@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Plant Disease Classifier</h1>
+    </div>
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>We are a team of passionate individuals working to revolutionize the agricultural industry by leveraging the power of technology. Our Plant Disease Classifier tool helps farmers and gardeners quickly identify and address plant diseases, ensuring healthier crops and more efficient farming practices.</p>
+    </div>
+    <div class="container">
+        <p class="upload-text"><i class="fas fa-upload"></i> Upload an image...</p>
+        <div class="upload-box">
+            <input type="file" id="file-upload" accept="image/*" />
+            <button type="button" class="browse-btn" id="browse-btn"><i class="fas fa-folder-open"></i> Browse files</button>
+        </div>
+        <div class="file-info" id="file-info">
+            <img src="" alt="Leaf" id="uploaded-image" class="uploaded-image" style="display: none;">
+            <span id="file-name"></span>
+            <button class="remove-btn" id="remove-btn" style="display: none;"><i class="fas fa-times"></i></button>
+        </div>
+        <button class="classify-btn" id="classify-btn" disabled><i class="fas fa-search"></i> Classify</button>
+        <div class="prediction" id="prediction" style="display: none;">
+            <p>Prediction: <span id="prediction-result">Blueberry___healthy</span></p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Plant Disease Classifier. Follow us on 
+            <a href="#"><i class="fab fa-facebook"></i></a> 
+            <a href="#"><i class="fab fa-twitter"></i></a> 
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
